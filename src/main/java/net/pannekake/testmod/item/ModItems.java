@@ -20,7 +20,7 @@ public class ModItems {
     public static final Item SVEN_OLAI = registerItem("sven_olai", Item::new, new Item.Settings());
 
     private static Item registerItem(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
-        final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of("testmod", name));
+        final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Testmod.MOD_ID, name));
         return Items.register(registryKey, factory, settings);
     }
 
