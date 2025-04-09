@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "testmod",
+	"version": "${version}",
+	"name": "testmod",
+	"description": "Test project for learning to mod in minecraft",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://github.com/Birkhol/",
+		"sources": "https://github.com/Birkhol/Fabric-Test-1.21.5"
+	},
+	"license": "MIT",
+	"icon": "assets/testmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.pannekake.testmod.Testmod"
+		],
+		"fabric-datagen": [
+			"net.pannekake.testmod.TestmodDataGenerator"
+		],
+		"client": [
+			"net.pannekake.testmod.TestModClient"
+		]
+	},
+	"mixins": [
+		"testmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
