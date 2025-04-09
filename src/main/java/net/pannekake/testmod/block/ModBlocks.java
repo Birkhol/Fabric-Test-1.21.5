@@ -27,7 +27,7 @@ public class ModBlocks {
             AbstractBlock.Settings.create().strength(3f)
                     .requiresTool());
 
-    public static final Block SVEN_OLAI_BLOCK = registerBlock("sven_olai_block", AbstractBlock.Settings.create().strength(5f));
+    public static final Block SVEN_OLAI_BLOCK = registerBlock("sven_olai_block", AbstractBlock.Settings.create().strength(2.0F, 3.0F).burnable());
 
     private static Block registerBlock(String name, AbstractBlock.Settings blockSettings) {
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Testmod.MOD_ID, name));
