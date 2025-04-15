@@ -18,6 +18,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.pannekake.testmod.Testmod;
+import net.pannekake.testmod.block.custom.MagicBlock;
 
 import java.util.function.Function;
 
@@ -38,6 +39,8 @@ public class ModBlocks {
 
     public static final Block PINK_GARNET_DEEPSLATE_ORE = registerBlock("pink_garnet_deepslate_ore",
                     AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE));
+
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block", MagicBlock.Settings.create().strength(1f).requiresTool());
 
     private static Block registerBlock(String name, AbstractBlock.Settings blockSettings) {
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Testmod.MOD_ID, name));

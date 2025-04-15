@@ -15,6 +15,15 @@
   "item.testmod.pink_garnet_ore": "Pink Garnet Ore",
   "item.testmod.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
 
+  "block.testmod.magic_block": "Magic Block",
+  "item.testmod.magic_block": "Magic Block",
+
   "itemgroup.testmod.mod_items": "Mod Items",
-  "itemgroup.testmod.mod_blocks": "Mod Blocks"
+  "itemgroup.testmod.mod_blocks": "Mod Blocks",
+
+  "tooltip.testmod.magic_block.tooltip": "This block is very, very §9MAGICAL§r",
+  "tooltip.testmod.chisel.shift_down": "This item chisels blocks into Bricks!",
+  "tooltip.testmod.chisel": "Press §eShift§r for more Information!",
+
+  "item.testmod.pink_garnet_sword": "Pink Garnet Sword"
 }

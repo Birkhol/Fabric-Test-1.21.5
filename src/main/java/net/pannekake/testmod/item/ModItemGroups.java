@@ -22,6 +22,7 @@ public class ModItemGroups {
               entries.add(ModItems.RAW_PINK_GARNET);
               entries.add(ModItems.SVEN_OLAI);
               entries.add(ModItems.CHISEL);
+              entries.add(ModItems.PINK_GARNET_SWORD);
             }).build());
 
     public static final ItemGroup MOD_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -34,6 +35,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SVEN_OLAI_BLOCK);
                         entries.add(ModBlocks.PINK_GARNET_ORE);
                         entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+                        entries.add(ModBlocks.MAGIC_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {
