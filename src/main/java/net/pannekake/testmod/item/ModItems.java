@@ -10,6 +10,8 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.pannekake.testmod.Testmod;
+import net.pannekake.testmod.item.Custom.ChiselItem;
+
 
 import java.util.function.Function;
 
@@ -18,6 +20,7 @@ public class ModItems {
     public static final Item PINK_GARNET = registerItem("pink_garnet", Item::new, new Item.Settings());
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", Item::new, new Item.Settings());
     public static final Item SVEN_OLAI = registerItem("sven_olai", Item::new, new Item.Settings());
+    public static final Item CHISEL = registerItem("chisel", ChiselItem::new, new Item.Settings().maxDamage(32));
 
     private static Item registerItem(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
         final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Testmod.MOD_ID, name));

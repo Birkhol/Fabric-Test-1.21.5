@@ -27,7 +27,7 @@
                   }
                 }
               ],
-              "name": "testmod:sven_olai_block"
+              "name": "testmod:pink_garnet_ore"
             },
             {
               "type": "minecraft:item",
@@ -41,7 +41,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "testmod:sven_olai"
+              "name": "testmod:raw_pink_garnet"
             }
           ]
         }

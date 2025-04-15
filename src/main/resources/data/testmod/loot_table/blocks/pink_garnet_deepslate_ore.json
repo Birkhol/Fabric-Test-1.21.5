@@ -27,11 +27,20 @@
                   }
                 }
               ],
-              "name": "testmod:sven_olai_block"
+              "name": "testmod:pink_garnet_deepslate_ore"
             },
             {
               "type": "minecraft:item",
               "functions": [
+                {
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 5.0,
+                    "min": 2.0
+                  },
+                  "function": "minecraft:set_count"
+                },
                 {
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:ore_drops",
@@ -41,7 +50,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "testmod:sven_olai"
+              "name": "testmod:raw_pink_garnet"
             }
           ]
         }

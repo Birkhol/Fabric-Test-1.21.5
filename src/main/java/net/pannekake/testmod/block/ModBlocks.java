@@ -3,6 +3,9 @@ package net.pannekake.testmod.block;
 import net.minecraft.block.Block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.MapColor;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -13,6 +16,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.pannekake.testmod.Testmod;
 
 import java.util.function.Function;
@@ -28,6 +32,12 @@ public class ModBlocks {
                     .requiresTool());
 
     public static final Block SVEN_OLAI_BLOCK = registerBlock("sven_olai_block", AbstractBlock.Settings.create().strength(2.0F, 3.0F).burnable());
+
+    public static final Block PINK_GARNET_ORE = registerBlock("pink_garnet_ore",
+            AbstractBlock.Settings.create().strength(3f).requiresTool());
+
+    public static final Block PINK_GARNET_DEEPSLATE_ORE = registerBlock("pink_garnet_deepslate_ore",
+                    AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE));
 
     private static Block registerBlock(String name, AbstractBlock.Settings blockSettings) {
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Testmod.MOD_ID, name));
