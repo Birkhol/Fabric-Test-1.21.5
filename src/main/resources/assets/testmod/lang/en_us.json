@@ -3,6 +3,7 @@
   "item.testmod.raw_pink_garnet": "Raw Pink Garnet",
   "item.testmod.sven_olai": "Sven-Olai",
   "item.testmod.chisel": "Chisel",
+  "item.testmod.netherite_scanner": "Netherite Scanner",
 
   "block.testmod.pink_garnet_block": "Block of Pink Garnet",
   "item.testmod.pink_garnet_block": "Block of Pink Garnet",
@@ -21,9 +22,9 @@
   "itemgroup.testmod.mod_items": "Mod Items",
   "itemgroup.testmod.mod_blocks": "Mod Blocks",
 
-  "tooltip.testmod.magic_block.tooltip": "This block is very, very §9MAGICAL§r",
+  "tooltip.testmod.magic_block.tooltip": "This block is very, very MAGICAL",
   "tooltip.testmod.chisel.shift_down": "This item chisels blocks into Bricks!",
-  "tooltip.testmod.chisel": "Press §eShift§r for more Information!",
+  "tooltip.testmod.chisel": "Press Shift for more Information!",
 
   "item.testmod.pink_garnet_sword": "Pink Garnet Sword"
-}
+  }

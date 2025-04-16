@@ -22,7 +22,7 @@ public class ModItemGroups {
               entries.add(ModItems.RAW_PINK_GARNET);
               entries.add(ModItems.SVEN_OLAI);
               entries.add(ModItems.CHISEL);
-              entries.add(ModItems.PINK_GARNET_SWORD);
+              entries.add(ModItems.NETHERITE_SCANNER);
             }).build());
 
     public static final ItemGroup MOD_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

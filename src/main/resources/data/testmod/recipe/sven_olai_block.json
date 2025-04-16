@@ -2,7 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "testmod:sven_olai"
+    "#": "testmod:sven_olai",
+    "R": "testmod:pink_garnet"
   },
   "pattern": [
     "###",

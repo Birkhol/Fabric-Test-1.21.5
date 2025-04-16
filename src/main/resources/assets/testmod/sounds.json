@@ -1,0 +1,38 @@
+{
+  "animated_block_break": {
+    "subtitle": "sounds.testmod.animated_block_break",
+    "sounds": [
+      "testmod:animated_block_break"
+    ]
+  },
+  "animated_block_hit": {
+    "subtitle": "sounds.testmod.animated_block_hit",
+    "sounds": [
+      "testmod:animated_block_hit"
+    ]
+  },
+  "animated_block_place": {
+    "subtitle": "sounds.testmod.animated_block_place",
+    "sounds": [
+      "testmod:animated_block_place"
+    ]
+  },
+  "animated_block_walk": {
+    "subtitle": "sounds.testmod.animated_block_walk",
+    "sounds": [
+      "testmod:animated_block_walk"
+    ]
+  },
+  "cool_sound": {
+    "subtitle": "sounds.testmod.cool_sound",
+    "sounds": [
+      "testmod:cool_sound"
+    ]
+  },
+  "scanner_beep": {
+    "subtitle": "sounds.testmod.scanner_beep",
+    "sounds": [
+      "testmod:scanner_beep"
+    ]
+  }
+}

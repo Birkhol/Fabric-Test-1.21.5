@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "testmod:item/netherite_scanner_far"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "testmod:scanner_state": 2.0
+      },
+      "model": "testmod:item/netherite_scanner_far"
+    },
+    {
+      "predicate": {
+        "testmod:scanner_state": 3.0
+      },
+      "model": "testmod:item/netherite_scanner_medium"
+    },
+    {
+      "predicate": {
+        "testmod:scanner_state": 4.0
+      },
+      "model": "testmod:item/netherite_scanner_close"
+    }
+  ]
+}

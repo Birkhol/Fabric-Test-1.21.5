@@ -19,6 +19,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.pannekake.testmod.Testmod;
 import net.pannekake.testmod.block.custom.MagicBlock;
+import net.pannekake.testmod.sound.ModSounds;
 
 import java.util.function.Function;
 
@@ -32,7 +33,7 @@ public class ModBlocks {
             AbstractBlock.Settings.create().strength(3f)
                     .requiresTool());
 
-    public static final Block SVEN_OLAI_BLOCK = registerBlock("sven_olai_block", AbstractBlock.Settings.create().strength(2.0F, 3.0F).burnable());
+    public static final Block SVEN_OLAI_BLOCK = registerBlock("sven_olai_block", AbstractBlock.Settings.create().sounds(ModSounds.ANIMATED_BLOCK_SOUNDS).strength(2.0F, 3.0F).burnable());
 
     public static final Block PINK_GARNET_ORE = registerBlock("pink_garnet_ore",
             AbstractBlock.Settings.create().strength(3f).requiresTool());
