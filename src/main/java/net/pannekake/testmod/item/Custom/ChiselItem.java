@@ -38,12 +38,13 @@ public class ChiselItem extends Item {
     public ActionResult useOnBlock(ItemUsageContext context) {
         World world = context.getWorld();
         Block clickedBlock = world.getBlockState(context.getBlockPos()).getBlock();
+        ItemStack stack = context.getStack();
 
     if(CHISEL_MAP.containsKey(clickedBlock)) {
         if(!world.isClient()) {
             world.setBlockState(context.getBlockPos(), CHISEL_MAP.get(clickedBlock).getDefaultState());
 
-            context.getStack().damage(1, ((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
+            stack.damage(1, ((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
                     item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
             world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);

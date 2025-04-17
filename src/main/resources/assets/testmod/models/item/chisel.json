@@ -2,5 +2,13 @@
   "parent": "minecraft:item/generated",
   "textures": {
     "layer0": "testmod:item/chisel"
-  }
+  },
+  "overrides": [
+    {
+      "predicate":{
+        "testmod:used:": 1
+      },
+      "model": "testmod:item/chisel_used"
+    }
+  ]
 }

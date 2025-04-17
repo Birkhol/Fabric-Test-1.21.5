@@ -1,0 +1,7 @@
+// 1.21.5	-999999999-01-01T00:00:00	testmod/Block Loot Tables
+ff7590126ede9ddfc81ec8871a83730bf815a1d8 data/testmod/loot_table/blocks/magic_block.json
+c461af33ca70128bddcd4c2fd9eba2a8bccfae44 data/testmod/loot_table/blocks/pink_garnet_block.json
+f8916f7fd760c25009d5399c6abe610ede1c882a data/testmod/loot_table/blocks/pink_garnet_deepslate_ore.json
+668fc3c08b71d2b115de1c6861393552b07fe3bd data/testmod/loot_table/blocks/pink_garnet_ore.json
+81f7ef8e00f00da9e179bf5375dd278a2007e772 data/testmod/loot_table/blocks/raw_pink_garnet_block.json
+6412e2cefb094401e33dc7e030747b5cb147f199 data/testmod/loot_table/blocks/sven_olai_block.json

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sven_olai": {
+      "conditions": {
+        "items": [
+          {
+            "items": "testmod:sven_olai"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:sven_olai_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sven_olai"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:sven_olai_block"
+    ]
+  }
+}
