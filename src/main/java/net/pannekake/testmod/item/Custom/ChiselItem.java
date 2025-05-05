@@ -16,6 +16,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
 import net.pannekake.testmod.block.ModBlocks;
+import net.pannekake.testmod.component.ModDataComponentTypes;
 
 import java.util.Map;
 import java.util.function.Consumer;
@@ -48,6 +49,8 @@ public class ChiselItem extends Item {
                     item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
             world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+
+            context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
 
         }
     }

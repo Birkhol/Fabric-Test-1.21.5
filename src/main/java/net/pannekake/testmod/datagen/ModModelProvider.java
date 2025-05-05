@@ -37,6 +37,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.NETHERITE_SCANNER, Models.GENERATED);
         itemModelGenerator.register(ModItems.SVEN_OLAI, Models.GENERATED);
 
+
         Item chisel = ModItems.CHISEL;
 
         ItemModel.Unbaked unusedChisel = ItemModels.basic(itemModelGenerator.upload(chisel, Models.GENERATED));

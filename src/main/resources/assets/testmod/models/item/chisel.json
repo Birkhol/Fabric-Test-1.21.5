@@ -5,8 +5,8 @@
   },
   "overrides": [
     {
-      "predicate":{
-        "testmod:used:": 1
+      "predicate": {
+        "testmod:used": 1
       },
       "model": "testmod:item/chisel_used"
     }

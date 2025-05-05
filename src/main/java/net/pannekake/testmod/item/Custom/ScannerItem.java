@@ -12,6 +12,7 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.pannekake.testmod.sound.ModSounds;
+import net.minecraft.component.DataComponentTypes;
 
 import java.util.HashMap;
 import java.util.UUID;
@@ -69,23 +70,24 @@ public class ScannerItem extends Item {
             // Beep delay calculation
             long currentTime = world.getTime(); // in ticks (20 per second)
             long lastBeep = lastBeepTimeMap.getOrDefault(player.getUuid(), 0L);
-            String texture = "scanner_none";
+            int modelValue = 0;
 
             long delayTicks;
             if (distance <= 2) {
                 delayTicks = 8;
-                texture = "scanner_close";
+                modelValue = 3;
             }
             else if (distance <= 10) {
                 delayTicks = 10;
-                texture = "scanner_medium";
+                modelValue = 2;
             }
             else if (distance <= 20) {
                 delayTicks = 20;
-                texture = "scanner_far";
+                modelValue = 1;
             }
             else {
                 delayTicks = 40;
+                modelValue = 0;
             }
 
             if ((currentTime - lastBeep) >= delayTicks) {

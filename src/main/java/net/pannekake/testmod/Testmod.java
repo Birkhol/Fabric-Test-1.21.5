@@ -8,6 +8,7 @@ import net.minecraft.text.Text;
 import net.pannekake.testmod.block.ModBlocks;
 import net.pannekake.testmod.item.ModItemGroups;
 import net.pannekake.testmod.item.ModItems;
+import net.pannekake.testmod.component.ModDataComponentTypes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,6 +23,7 @@ public class Testmod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModDataComponentTypes.registerDataComponentTypes();
 		ItemTooltipCallback.EVENT.register((itemStack, tooltipContext, tooltipType, list) -> {
 			if (itemStack.isOf(ModItems.CHISEL)){
 				if (Screen.hasShiftDown()) {
